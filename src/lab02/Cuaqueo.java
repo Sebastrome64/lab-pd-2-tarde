@@ -1,9 +1,9 @@
-
 package lab02;
-public class Cuaqueo implements Cuaqueable{
-    
+
+public class Cuaqueo implements Cuaqueable {
+
     @Override
-    public void Cuaquear() {
+    public void cuaquear() {
         System.out.println("Soy un verdadero pato por eso hago CUAC CUAC");
     }
 }
