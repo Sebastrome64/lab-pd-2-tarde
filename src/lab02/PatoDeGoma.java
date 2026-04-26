@@ -1,13 +1,15 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package lab02;
 
-/**
- *
- * @author sistemas
- */
-public class PatoDeGoma {
-    
+public class PatoDeGoma extends Pato {
+
+    public void PatoDeGoma() {
+        volable = new NoVuela();
+        cuaqueable = new Chirreo();
+    }
+
+    @Override
+    public void mostrar() {
+        System.out.println("Yo soy un PATITO DE GOMA");
+
+    }
 }
