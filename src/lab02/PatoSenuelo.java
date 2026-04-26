@@ -1,13 +1,14 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package lab02;
 
-/**
- *
- * @author sistemas
- */
-public class PatoSenuelo {
-    
+public class PatoSenuelo extends Pato {
+
+    public PatoSenuelo() {
+        volable = new NoVuela();
+        cuaqueable = new CuaqueoMudo();
+    }
+
+    @Override
+    public void mostrar() {
+        System.out.println("Yo soy Pato señuelo");
+    }
 }
