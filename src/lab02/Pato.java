@@ -1,28 +1,29 @@
 package lab02;
+
 public abstract class Pato {
-    Volable volable;
-    Cuaqueable cuaqueable;
-    
-    public Pato() {
+
+    protected Volable volable;
+    protected Cuaqueable cuaqueable;
+
+    public abstract void mostrar();
+
+    public void realizarVuelo() {
+        volable.volar();
     }
-    
-    abstract void mostrar();
-    
-    
+
     public void realizarCuaqueo() {
         cuaqueable.cuaquear();
     }
-    
+
     public void nadar() {
-        System.out.println("TODOS LOS PATOS NADAN ");
-        
+        System.out.println("TODOS LOS PATOS NADAN");
     }
 
-    public void setVolable(Volable volable) {
-        this.volable = volable;
+    public void setVolable(Volable v) {
+        this.volable = v;
     }
 
-    public void setCuaqueable(Cuaqueable cuaqueable) {
-        this.cuaqueable = cuaqueable;
+    public void setCuaqueable(Cuaqueable c) {
+        this.cuaqueable = c;
     }
 }
